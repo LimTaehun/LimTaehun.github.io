@@ -1,0 +1,13 @@
+{
+"links" : [ {
+"rel" : "self",
+"href" : "http://api.hrfco.go.kr"
+} ],
+"content" : [ {
+"wlobscd" : "1018683",
+"ymdhm" : "202210251410",
+"wl" : "0.77",
+"fw" : "322.04",
+"links" : [ ]
+} ]
+}
