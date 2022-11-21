@@ -4,10 +4,10 @@
 "href" : "http://api.hrfco.go.kr"
 } ],
 "content" : [ {
-"wlobscd" : "1018683",
-"ymdhm" : "202210251410",
-"wl" : "0.77",
-"fw" : "322.04",
+"ttatest" : "5555555",
+"ttatest1" : "0.22",
+"ttatest2" : "0.22",
+"ttatest3ld" : "202211211928",
 "links" : [ ]
 } ]
 }
