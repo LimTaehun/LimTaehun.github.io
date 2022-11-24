@@ -5,9 +5,9 @@
 } ],
 "content" : [ {
 "ttatest" : "5555555",
-"ttatest1" : "0.22",
-"ttatest2" : "0.22",
-"ttatest3ld" : "202211211928",
+"ttatestdouble" : "0.33",
+"ttatestdouble2" : "0.22",
+"ttatestday" : "202211211928",
 "links" : [ ]
 } ]
 }
