@@ -5,7 +5,7 @@
 } ],
 "content" : [ {
 "ttatestkey" : "Spring테스트",
-"ttatestdouble" : "0.33",
+"ttatestdouble" : "doubletest",
 "ttatestdouble2" : "0.22",
 "ttatestday" : "202211281928",
 "links" : [ ]
