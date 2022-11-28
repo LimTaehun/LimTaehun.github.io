@@ -4,9 +4,9 @@
 "href" : "http://api.hrfco.go.kr"
 } ],
 "content" : [ {
-"ttatestkey" : "Spring테스트",
-"ttatestdouble" : "0.77",
-"ttatestdouble2" : "0.22",
+"ttatestkey" : "0",
+"ttatestdouble" : "123",
+"ttatestdouble2" : "0.1",
 "ttatestday" : "20221128",
 "links" : [ ]
 } ]
