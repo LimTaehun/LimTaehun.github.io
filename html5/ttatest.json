@@ -1,0 +1,13 @@
+{
+"links" : [ {
+"rel" : "self",
+"href" : "http://api.hrfco.go.kr"
+} ],
+"content" : [ {
+"ttatestkey" : "123456",
+"ttatestdouble" : "0.88",
+"ttatestdouble2" : "0.77",
+"ttatestday" : "20221121",
+"links" : [ ]
+} ]
+}
