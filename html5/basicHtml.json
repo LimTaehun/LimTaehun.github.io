@@ -4,8 +4,8 @@
 "href" : "http://api.hrfco.go.kr"
 } ],
 "content" : [ {
-"ttatestkey" : "0",
-"ttatestdouble" : "1",
+"ttatestkey" : "true",
+"ttatestdouble" : "false",
 "ttatestdouble2" : "0.1",
 "ttatestday" : "20221128",
 "links" : [ ]
