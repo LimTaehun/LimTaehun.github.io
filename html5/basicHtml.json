@@ -3,7 +3,7 @@
 "rel" : "self",
 "href" : "http://api.hrfco.go.kr"
 } ],
-"content" : [ {
+"ttatest" : [ {
 "ttatestkey" : "fivefive",
 "ttatestdouble" : "10",
 "ttatestdouble2" : "maxsev",
