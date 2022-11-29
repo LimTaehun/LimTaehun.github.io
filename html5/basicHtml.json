@@ -5,9 +5,9 @@
 } ],
 "content" : [ {
 "ttatestkey" : "true",
-"ttatestdouble" : "aa",
-"ttatestdouble2" : "4",
-"ttatestday" : "20221128",
+"ttatestdouble" : "10",
+"ttatestdouble2" : "maxseven",
+"ttatestday" : "203311281111",
 "links" : [ ]
 } ]
 }
