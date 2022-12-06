@@ -3,11 +3,13 @@
 "rel" : "self",
 "href" : "http://api.hrfco.go.kr"
 } ],
+"content" : [ {
+"ttatestday" : "20221121",
 "ttatest" : [ {
-"ttatestkey" : "basebase",
-"ttatestdouble" : "12",
-"ttatestdouble2" : "maxsev",
-"ttatestday" : "203311281111",
+InR0YXRlc3RrZXkiIDogInNzc3NjY2NjIg==,
+InR0YXRlc3Rkb3VibGUiIDogIjEyIg==,
+InR0YXRlc3Rkb3VibGUyIiA6ICJtYXhzZXYi,
+InR0YXRlc3RkYXkiIDogIjIwMzMxMTI4MTExMSI=,
 "links" : [ ]
 } ]
 }
