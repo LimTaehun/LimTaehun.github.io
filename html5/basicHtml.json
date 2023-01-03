@@ -4,10 +4,10 @@
 "href" : "http://api.hrfco.go.kr"
 } ],
 "ttatest" : [ {
-"ttatestkey" : "sssscccc",
-"ttatestdouble" : "12",
-"ttatestdouble2" : "maxsev",
-"ttatestday" : "203311281111",
+"ttatestkey" : "0103TTAtest",
+"ttatestdouble" : "230103",
+"ttatestdouble2" : "5Test",
+"ttatestday" : "202303061309",
 "links" : [ ]
 } ]
 }
