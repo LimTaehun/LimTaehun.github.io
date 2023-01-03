@@ -1,13 +1,1 @@
-{
-"links" : [ {
-"rel" : "self",
-"href" : "http://api.hrfco.go.kr"
-} ],
-"TTAGS" : [ {
-"ttatestkey" : "0103TTAtest",
-"ttatestdouble" : "99999",
-"ttatestdouble2" : "5Test",
-"ttatestday" : "202303061309",
-"links" : [ ]
-} ]
-}
+ewoibGlua3MiIDogWyB7CiJyZWwiIDogInNlbGYiLAoiaHJlZiIgOiAiaHR0cDovL2FwaS5ocmZjby5nby5rciIKfSBdLAoiVFRBR1MiIDogWyB7CiJ0dGF0ZXN0a2V5IiA6ICIwMTAzVFRBdGVzdCIsCiJ0dGF0ZXN0ZG91YmxlIiA6ICI5OTk5OSIsCiJ0dGF0ZXN0ZG91YmxlMiIgOiAiNVRlc3QiLAoidHRhdGVzdGRheSIgOiAiMjAyMzAzMDYxMzA5IiwKImxpbmtzIiA6IFsgXQp9IF0KfQo=
