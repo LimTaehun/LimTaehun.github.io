@@ -3,7 +3,7 @@
 "rel" : "self",
 "href" : "http://api.hrfco.go.kr"
 } ],
-"ttatest" : [ {
+"TTAGS" : [ {
 "ttatestkey" : "0103TTAtest",
 "ttatestdouble" : "230103",
 "ttatestdouble2" : "5Test",
