@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html>
+ 	<style>
+		body {
+			margin-left: 300px;
+		}
+	</style>
 <head>
 	<title>Random String Generator</title>
 	<script type="text/javascript">
@@ -55,20 +60,13 @@
 	<label for="specialChars">특수문자 포함 (!@#$%^&*()_+~`|}{[]\:;?><,./-=)</label><br>
 	<input type="checkbox" id="numbers">
 	<label for="numbers">숫자 포함 (0-9)</label><br>
-	<button onclick="generateString()">Generate</button><br>
+	<button onclick="generateString()">문자 만들기</button><br>
 	<label for="result">결과:</label><br>
       
-	<textarea id="result" readonly></textarea> <br>
+	<textarea id="result" cols="40" rows="10" readonly></textarea> <br>
       <id="reslut">
 <button onclick="copyToClipboard()">복사하기</button>
-
-
-
-
-      
-      
-      
-        
-      
+           
+          
 </body>
 </html>
