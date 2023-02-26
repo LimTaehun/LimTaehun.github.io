@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+	<title>Random String Generator</title>
+	<script type="text/javascript">
+		function generateString() {
+			var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+			var specialChars = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
+			var numberChars = "0123456789";
+			var result = "";
+			var length = parseInt(document.getElementById("length").value);
+			var useUppercase = document.getElementById("uppercase").checked;
+			var useLowercase = document.getElementById("lowercase").checked;
+			var useSpecialChars = document.getElementById("specialChars").checked;
+			var useNumbers = document.getElementById("numbers").checked;
 
-<p>1. 아래의 "복사하기" 버튼을 클릭하세요.</p>
-<p>2. 메모장 같은 다른 윈도우에 Ctrl+V 로 붙여넣기를 해서 확인해 보세요.</p>
+			var allChars = "";
+			if (useUppercase) {
+				allChars += uppercaseChars;
+			}
+			if (useLowercase) {
+				allChars += lowercaseChars;
+			}
+			if (useSpecialChars) {
+				allChars += specialChars;
+			}
+			if (useNumbers) {
+				allChars += numberChars;
+			}
 
-<input type="text" value="Hello World" id="myInput">
-<button onclick="copyToClipboard()">복사하기</button>
+			for (var i = 0; i < length; i++) {
+				result += allChars.charAt(Math.floor(Math.random() * allChars.length));
+			}
 
-<script>
-function copyToClipboard() {
-  var copyText = document.getElementById("myInput");
+			document.getElementById("result").value = result;
+		}
+      function copyToClipboard() {
+  var copyText = document.getElementById("result");
   copyText.select();
   copyText.setSelectionRange(0, 99999)
   document.execCommand("copy");
-  alert("복사한 문자열 : " + copyText.value);
+  
 }
-</script>
+	</script>
+</head>
+<body>
+	<label for="length">길이:</label>
+	<input type="number" id="length" value="8" min="1" max="128"><br>
+	<input type="checkbox" id="uppercase" checked>
+	<label for="uppercase">영어 대문자 포함 (A-Z)</label><br>
+	<input type="checkbox" id="lowercase" checked>
+	<label for="lowercase">영어 소문자 포함 (a-z)</label><br>
+	<input type="checkbox" id="specialChars">
+	<label for="specialChars">특수문자 포함 (!@#$%^&*()_+~`|}{[]\:;?><,./-=)</label><br>
+	<input type="checkbox" id="numbers">
+	<label for="numbers">숫자 포함 (0-9)</label><br>
+	<button onclick="generateString()">Generate</button><br>
+	<label for="result">결과:</label><br>
+      
+	<textarea id="result" readonly></textarea> <br>
+      <id="reslut">
+<button onclick="copyToClipboard()">복사하기</button>
 
+
+
+
+      
+      
+      
+        
+      
 </body>
 </html>
-[출처] Html내용 클립보드로 복사하기 (Javascript 이용)|작성자 까만손오공
