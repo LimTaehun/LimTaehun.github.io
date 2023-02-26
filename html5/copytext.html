@@ -1,11 +1,23 @@
-function clip(){
-   var url = '';
-   var textarea = document.createElement("textarea");
-   document.body.appendChild(textarea);
-   url = 'window.location.href';
-   textarea.value = url;
-   textarea.select();
-   document.execCommand("copy");
-   document.body.removeChild(textarea);
-   alert("링크가 복사되었습니다. 필요하신 곳에 붙여넣기 하세요!")
-};
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>1. 아래의 "복사하기" 버튼을 클릭하세요.</p>
+<p>2. 메모장 같은 다른 윈도우에 Ctrl+V 로 붙여넣기를 해서 확인해 보세요.</p>
+
+<input type="text" value="Hello World" id="myInput">
+<button onclick="copyToClipboard()">복사하기</button>
+
+<script>
+function copyToClipboard() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("복사한 문자열 : " + copyText.value);
+}
+</script>
+
+</body>
+</html>
+[출처] Html내용 클립보드로 복사하기 (Javascript 이용)|작성자 까만손오공
