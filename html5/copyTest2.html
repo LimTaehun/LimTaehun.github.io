@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+		textarea {
+			width: 80%;
+			height: 200px;
+			resize: vertical;
+		}
+	</style>
 	<title>글자수 + 문자열 랜덤 생성 + 자동복사 </title>
 	<script type="text/javascript">
 		function generateString() {
@@ -54,6 +61,11 @@
 			copyText.setSelectionRange(0, 99999);
 			document.execCommand("copy");
 		}
+        function countChars() {
+			var input = document.getElementById("input");
+			var count = document.getElementById("count");
+			count.innerHTML = input.value.length;
+		}
 	</script>
 </head>
 <body>
@@ -73,6 +85,14 @@
 	<button onclick="generateString()">Generate</button><br>
 	<label for="result">결과:</label><br>
 	<textarea id="result" rows="5" cols="50" readonly></textarea><br>
-	<button onclick="copyToClipboard()">복사하기</button>
-
-
+	<button onclick="copyToClipboard()">복사하기</button><br><br>
+    
+    
+<label for="input">텍스트 입력:</label><br>
+	<textarea id="input" oninput="countChars()"></textarea>
+	<p>글자 수: <span id="count">0</span></p>
+    
+    
+    
+    
+    
