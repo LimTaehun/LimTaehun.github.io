@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>copy to clipboard</title>
+<script>
+
+function copyToClipboard() {
+  var input = document.querySelector('input');
+  try {
+    input.select();
+    // returnValue: A Boolean that is false if the command is not supported or enabled.
+    var returnValue = document.execCommand('copy');
+    console.debug(returnValue);
+    if (!returnValue) {
+      throw new Error('copied nothing');
+    }
+    alert('복사 되었습니다.');
+  } catch (e) {
+    prompt('Copy to clipboard: Ctrl+C, Enter', input.value);
+  }
+}
+function Linux_OS_Check(){
+    document.getElementById("test").value = 'cat /etc/*-release';
+}
+function Linux_CPU_Check(){
+    document.getElementById("test").value = 'cat /proc/cpuinfo';
+}
+function Linux_RAM_Check(){
+    document.getElementById("test").value = 'cat /proc/meminfo';
+}
+function Linux_HDD_Check() {
+  var command = "df -P | grep -v ^Filesystem | awk '{sum += $2} END {print sum/1024/1024 \" GB\"}'";
+  document.getElementById("test").value = command;
+}
+
+</script>
+</head>
+<body>
+ <h1>리눅스 사양 명령어</h1>
+<input type="text" id="test" value="원하는 명령어 클릭" style="width: 500px;">
+
+<button type="button" onclick="copyToClipboard()">복사하기</button> </br> 
+
+
+<input type='button'  onclick='Linux_OS_Check()' value='리눅스 OS 확인'/>
+<input type='button'  onclick='Linux_CPU_Check()' value='리눅스 CPU 확인'/>
+<input type='button'  onclick='Linux_RAM_Check()' value='리눅스 MEM 확인'/>
+<input type='button'  onclick='Linux_HDD_Check()' value='리눅스 Hdd 확인'/>
+
+
+</body>
+</html>
